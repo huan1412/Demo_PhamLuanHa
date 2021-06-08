@@ -1,0 +1,27 @@
+.header .title h1 {
+  color: green;
+}
+.list-news{
+	display: grid;
+	grid-template-columns: auto 50%;
+}
+.item-news {
+	margin: 10px;
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	align-items: center;
+	border: 1px solid #ddd
+}
+.item-news:first-child {
+    grid-row: 1 / 3;
+}
+.item-news:not(:first-child) .news-img{
+	display: none;
+}
+.news-img img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
